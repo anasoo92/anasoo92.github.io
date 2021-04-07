@@ -1,0 +1,265 @@
+body {
+  min-width: 500px;
+  margin: 0;
+  font-family: calibri;
+}
+
+header {
+  display: flex;
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 999;
+  border-bottom: solid 5px #a13d2d;
+}
+
+#header-img a > img {
+  height: 68px;
+  padding: 8px 0;
+  display: flex;
+}
+
+#navbar {
+  display: flex;
+  margin: 25px 0px;
+  padding: 8px 0;
+}
+
+.nav-list li {
+  list-style-type: none;
+  float: left;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  padding: 30px 20px;
+  font-size: 23px;
+}
+
+.nav-list a:hover {
+  text-decoration: none;
+  color: #a13d2d;
+}
+
+.capa > img {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 2%;
+  font-size: 2em;
+  font-style: italic;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+.servicos > ul {
+  -moz-column-count: 3;
+  column-count: 3;
+  line-height: 1.5;
+  text-align: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  list-style: none;
+  margin: 30px;
+  font-size: 1.3em;
+  border: 1px solid #a13d2d;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+@media only screen and (max-width: 800px) {
+  .servicos > ul {
+    font-size: 1em;
+    margin: 2%;
+  }
+}
+.servicos-list {
+  padding: 2% 2%;
+}
+
+.resizebar {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    display: none;
+  }
+
+  .resizebar {
+    position: relative;
+    display: inline-block;
+  }
+}
+.dropbtn {
+  background-color: #CCC;
+  color: black;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10%;
+  margin-top: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #F2F2F2;
+  color: #a13d2d;
+}
+
+.resizebar:hover .dropdown-content {
+  display: block;
+  color: #a13d2d;
+}
+
+.resizebar:hover .dropbtn {
+  background-color: #CCC;
+  color: #a13d2d;
+}
+
+.bars {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+/* SLIDE */
+.slideshow {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  margin-top: 2%;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2500px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2500px);
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before, .slider::after {
+  content: "";
+  position: absolute;
+  width: 2500px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 15s linear infinite;
+          animation: scroll 15s linear infinite;
+  display: flex;
+  width: 2500px;
+  height: 400px;
+}
+
+/*SLIDE END*/
+.contactos-mapa {
+  font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.morada-telefone {
+  line-height: 1.2;
+  width: 40%;
+  padding: 2%;
+  text-align: center;
+}
+
+.mapa {
+  width: 50%;
+  display: flex;
+  padding: 2%;
+}
+
+@media (max-width: 800px) {
+  .contacto-mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .morada-telefone {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .mapa {
+    width: 100%;
+  }
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 0;
+  background-color: #a13d2d;
+}
+
+hr {
+  width: 500px;
+  margin-bottom: 10px;
+}
