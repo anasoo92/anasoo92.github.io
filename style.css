@@ -263,3 +263,11 @@ hr {
   width: 500px;
   margin-bottom: 10px;
 }
+
+
+.anchor{
+  display: block;
+  height: 72px; 
+  margin-top: -72px; 
+  visibility: hidden;
+}
