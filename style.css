@@ -208,6 +208,7 @@ h1 {
 }
 
 /*SLIDE END*/
+
 .contactos-mapa {
   font-size: 25px;
   display: flex;
@@ -221,6 +222,11 @@ h1 {
   width: 40%;
   padding: 2%;
   text-align: center;
+}
+
+#phone {
+  font-size: 10px;
+  font-style: italic;
 }
 
 .mapa {
